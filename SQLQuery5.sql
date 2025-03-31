@@ -1,0 +1,11 @@
+﻿CREATE TABLE usertypes (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    Password NVARCHAR(255) NOT NULL,
+    Phone NVARCHAR(20),
+    Address NVARCHAR(255),
+    UserType NVARCHAR(50) NOT NULL
+);
+
+
